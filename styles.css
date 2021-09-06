@@ -1,0 +1,15 @@
+div{
+    
+
+}
+nav{
+    
+    display: flex;
+    color: white;
+    background-color: rgb(82, 82, 82);
+    align-items: center;
+    justify-content: space-around;
+
+
+
+}
