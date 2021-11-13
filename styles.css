@@ -30,15 +30,13 @@ nav {
   width: 100%;
   z-index: 10;
   margin: auto;
-  
+
   text-align: center;
 
-  background-color: rgb(82, 82, 82);
-  background-color: #741f1f;
+  background-color: #b8002b;
 }
 
 #navFlex {
-
   display: flex;
   align-items: center;
   align-content: center;
@@ -46,12 +44,8 @@ nav {
   justify-items: center;
   padding: 1rem;
 
-
   top: 0;
   z-index: 10;
-
-  background-color: rgb(82, 82, 82);
-  background-color: #741f1f;
 
   color: white;
   font-size: 1.2rem;
@@ -89,9 +83,9 @@ nav {
   min-width: 12rem;
 
   display: flex;
-  background-color: #4d1515;
-  border: #4d1515;
-  border-left: rgb(53, 53, 53);
+  background-color: #a30026;
+  border: #a30026;
+  border-left: #201c13;
   border-width: 0.5rem;
   border-style: solid;
   border-radius: 0.2rem;
@@ -103,7 +97,7 @@ nav {
 h1 {
   grid-row-start: 2;
   grid-column: span 7;
-  margin-top: 14rem;
+  margin-top: 16rem;
   margin-bottom: 4rem;
 
   box-sizing: border-box;
@@ -119,22 +113,82 @@ h1 {
   word-wrap: break-word;
 }
 
-.mainGrid {
-  height: 40rem;
+.landing-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
-  display: grid;
-  grid-template-rows: 10%, 40%, 30%, 20%;
-  grid-template-columns: 12.5%, 20%, 5%, 20%, 5%, 20%, 12.5%;
+  gap: 0rem;
 
-  gap: 2.5rem;
+  z-index: 10;
 
   color: white;
-  background-attachment: scroll;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-size: 1rem;
+  font-weight: 60;
+  line-height: 1rem;
 
   text-align: center;
+  text-transform: none;
+
+}
+
+.navText-flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+
+  justify-content: space-around;
+
+  text-align: center;
+  vertical-align: middle;
+  
+
+  gap: 2rem;
+  line-height: 1.4rem;
+
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.extraNav-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+
+  justify-content: space-around;
+
+  text-align: center;
+  vertical-align: middle;
+
+  gap: 2rem;
+
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+
+  
+}
+
+.navText{
+  width: 18rem;
+}
+
+.box-holder{
+  display:flex;
+  align-items: center;
+  align-content: center;
+
+  justify-content: space-around;
+  justify-items: center;
+
+  text-align: center;
+  vertical-align: middle;
+  width: 18rem;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 3rem;
 }
 
 .big-coach-flex {
@@ -153,9 +207,6 @@ h1 {
 
   align-items: center;
   justify-content: center;
-
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0.5rem;
 
   gap: 1rem;
   padding: 2rem;
@@ -216,30 +267,23 @@ h2 {
   object-fit: cover;
 }
 
-#gridItem1 {
-  grid-row-start: 3;
-  grid-column-start: 2;
-}
-#gridItem2 {
-  grid-row-start: 3;
-  grid-column-start: 4;
-}
-#gridItem3 {
-  grid-row-start: 3;
-  grid-column-start: 6;
-}
-
 footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
+  align-items: center;
+  align-content: center;
+
+  justify-items: center;
+  justify-content: space-around;
+  
+
   gap: 4rem;
 
   z-index: 10;
 
-  background-color: rgb(82, 82, 82);
-  background-color: #741f1f;
+  background-color: #b8002b;
 
   color: white;
   font-size: 1.2rem;
@@ -256,8 +300,6 @@ footer {
   align-items: center;
   align-content: center;
 
-  grid-row-start: 1;
-
   justify-content: space-around;
 
   text-align: center;
@@ -270,27 +312,37 @@ footer {
 
 .dividedItem + .dividedItem {
   border-top: solid 1px gray;
+  width: 100%;
 }
 
 .box {
-  width: 12rem;
+  width: 16rem;
 
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-top: 1.5rem;
 
-  background-color: rgb(77, 77, 77);
+  background-color: #2b2d42;
   border-radius: 0.5rem;
 
   height: 3rem;
+  line-height: 3rem;
+}
+
+.box:hover {
+  background-color: #616594;
+}
+
+.circle {
+  height: 6.45rem;
+  width: 6.45rem;
+  border-radius: 500rem;
+
+  background-color: #2b2d42;
 }
 
 .social {
   margin-bottom: -1rem;
-}
-
-.box:hover {
-  background-color: rgb(44, 44, 44);
 }
 
 .invisibox {
@@ -302,6 +354,27 @@ footer {
 
   text-align: center;
   vertical-align: middle;
+}
+
+.fb-holder{
+
+  display:flex;
+  align-items: center;
+  align-content: center;
+
+  justify-content: space-around;
+  justify-items: center;
+
+  text-align: center;
+  vertical-align: middle;
+  height: 3.5rem;
+  width: 3rem;
+
+}
+
+.fb-holder:hover{
+  filter: brightness(80%);
+  
 }
 
 #ln1 {
@@ -333,7 +406,8 @@ footer {
 }
 
 .transparentBackground {
-  background-color: rgba(1, 1, 1, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
 }
 
 a:link {
@@ -358,7 +432,7 @@ a:active {
 }
 
 #bg1 {
-  min-height: 120%;
+  min-height: 100%;
 
   background:
         /* top, transparent black, faked with gradient */ linear-gradient(
@@ -371,15 +445,16 @@ a:active {
   background-attachment: fixed;
 
   background-position-y: 8rem;
+  min-height: 100%;
 }
 
 #bg2 {
   min-height: 60%;
 
   background:
-        /* top, transparent black, faked with gradient */ linear-gradient(
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+        /* top, transparent with gradient */ linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.2)
     ),
     /* bottom, image */ url("assets/images/gallery/training-session.jpg");
 
