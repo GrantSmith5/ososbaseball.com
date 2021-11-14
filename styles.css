@@ -43,6 +43,7 @@ nav {
   justify-content: space-around;
   justify-items: center;
   padding: 1rem;
+  padding-right:6rem;
 
   top: 0;
   z-index: 10;
@@ -63,7 +64,7 @@ nav {
   display: none;
 
   position: absolute;
-  left: -1rem;
+  left: -2rem;
 
   border-radius: 0.5rem;
 
