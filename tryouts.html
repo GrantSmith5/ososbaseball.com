@@ -1,0 +1,157 @@
+<html>
+  <head>
+    
+    <title>Osos Baseball - Home</title>
+    <link rel="icon" href="assets/images/osos-decal-btrans-smol.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style-reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init("AfwvF61RlE7p-5mCm");
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('contact_service', 'contact_form', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
+  </head>
+
+  <body>
+    <nav>
+      <div id="navFlex" class="widthNMargins">
+        <div class="circle">
+          <a href="index.html"
+            ><img
+              src="assets/images/osos-decal-btrans-smol.png"
+              alt="Osos Baseball Logo."
+              height="100em"
+              width="auto"
+          /></a>
+        </div>
+        <div class="invisibox">
+          <a href="url">
+            <div>Tryouts</div>
+          </a>
+        </div>
+        <div class="invisibox">
+          <a href="url">
+            <div>Schedule</div>
+          </a>
+        </div>
+        <div class="dropdown invisibox">
+          <a href="url">
+            <div>Teams</div>
+          </a>
+          <div class="dropdown-content">
+            <div class="dropdown-flex">
+              <a href="url">
+                <div>11U</div>
+              </a>
+              <a href="url">
+                <div>12U</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="dropdown invisibox">
+          <a href="url">
+            <div>About Us</div>
+          </a>
+          <div class="dropdown-content">
+            <div class="dropdown-flex">
+              <a href="url">
+                <div>Our Philosophy</div>
+              </a>
+              <a href="url">
+                <div>Coach Duarte</div>
+              </a>
+              <a href="url">
+                <div>Coach Smith</div>
+              </a>
+              <a href="about-us/contact-us.html">
+                <div>Contact Us</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="bg1" class="parallax">
+        <div class="landing-flex widthNMargins">
+          <h1>Are you OSOS material?</h1>
+          <div class="navText-flex">
+            <div class="navText">
+                <br /><br />
+            </div>
+            </div>
+            <div class = "extraNav-flex">
+                <div class="box-holder">
+                    <a class="box" href="url">
+                      <div>button maybe</div>
+                    </a>
+                  </div>
+            </div>
+            <form class="form-flex widthNMargins" id="contact-form">
+              <input type="hidden" name="contact_number">
+              <input type="text" name="user_name" placeholder="Enter your name">
+              <input type="email" name="user_email" placeholder="Enter your email address">
+              <textarea class = msg.box name="message"></textarea>
+              <input type="submit" value="Send">
+          </form>
+            
+            
+
+        </div>
+        </div>
+      </div>
+
+    <footer>
+      <div class="lowerNav widthNMargins">
+        <a class="box" id="ln1" href="contact-us.html">
+          <div>Contact Us</div>
+        </a>
+        <a class="box" id="ln2" href="our-coaches.html">
+          <div>Our Philosophy</div>
+        </a>
+        <a class="box" id="ln3" href="photo-gallery.html">
+          <div>Photo Gallery</div>
+        </a>
+      </div>
+      <div class="social dividedItem">
+        <a href="https://www.facebook.com/ososbaseball7/"
+          ><div class="invisibox fb-holder">
+            <img
+              src="assets/images/facebook-logo-btrans-white-smol.png"
+              alt="Facebook Link"
+              height="30em"
+              width="auto"
+            />
+          </div>
+        </a>
+      </div>
+      <div class="legal dividedItem">
+        © 2021 Osos Baseball | Powered by Grant™
+      </div>
+    </footer>
+  </body>
+  <div></div>
+</html>

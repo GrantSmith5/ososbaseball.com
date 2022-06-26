@@ -392,6 +392,54 @@ footer {
 .legal {
   font-size: 0.8rem;
   line-height: 3rem;
+
+  
+}
+
+input[type=text] {
+
+  margin: 1rem 0;
+  border-radius: 4px;
+  resize:both;
+  
+}
+
+.form-flex {
+  display:flex;
+  flex-direction: column;
+
+
+  align-items: center;
+  align-content: center;
+
+  justify-content: space-around;
+  justify-items: center;
+
+  text-align: center;
+  vertical-align: middle;
+  height: 3.5rem;
+  width: 3rem;
+  padding: 2rem;
+}
+
+.msg-box {
+  margin: 1rem 0;
+  border-radius: 4px;
+  padding-bottom: 5rem;
+  
+}
+.msg-box:focus {
+  
+  
+  
+  
+}
+
+#SendEmail-button {
+  white-space: nowrap;
+   text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .parallax {
